@@ -38,8 +38,8 @@ bool lingering = false;
 uint8_t mod_state;
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-    switch (keycode){
-        /*case KC_BSPC:
+    /*switch (keycode){
+        case KC_BSPC:
         mod_state = get_mods();
         {
         static bool delkey_registered;
@@ -58,9 +58,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                 return false;
             }
         }
-        return true;*/
+        return true;
         }
-    }
+    }*/
     return true;
 }
 
