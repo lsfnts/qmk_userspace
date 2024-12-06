@@ -18,7 +18,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #pragma once
 
 #undef MANUFACTURER 
-#define MANUFACTURER lsfnts
+#define MANUFACTURER "lsfnts"
 
 #undef RGB_DI_PIN
 #undef RGBLED_NUM
