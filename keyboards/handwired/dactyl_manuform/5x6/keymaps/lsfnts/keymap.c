@@ -172,10 +172,19 @@ const keypos_t hand_swap_config[MATRIX_ROWS][MATRIX_COLS] = {
 };
 
 bool get_retro_tapping(uint16_t keycode, keyrecord_t *record) {
-    if(record->event.key.row == 4){
-        return true;
+    switch(keycode) {
+        case HOME_C:
+        case HOME_S:
+        case HOME_N:
+        case HOME_T:
+        case HOME_A:
+        case HOME_E:
+        case HOME_I:
+        case HOME_M:
+            return true;
+        default:
+            return false;
     }
-    return false;
 }
 
 /*void matrix_scan_user(void) {
