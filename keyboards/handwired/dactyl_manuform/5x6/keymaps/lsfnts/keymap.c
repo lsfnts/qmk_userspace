@@ -171,12 +171,12 @@ const keypos_t hand_swap_config[MATRIX_ROWS][MATRIX_COLS] = {
     {{5, 5}, {4, 5}, {3, 5}, {2, 5}, {1, 5}, {0, 5}}
 };
 
-bool get_retro_tapping(uint16_t keycode, keyrecord_t *record) {
+/*bool get_retro_tapping(uint16_t keycode, keyrecord_t *record) {
     switch(keycode) {
         default:
             return false;
     }
-}
+}*/
 bool get_permissive_hold(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         case HOME_N:

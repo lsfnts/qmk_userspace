@@ -52,7 +52,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 //#define DEBUG_MATRIX_SCAN_RATE
 
-#define TAPPING_TERM 280
+#define TAPPING_TERM 350
 #define TAPPING_TERM_PER_KEY
 
 #define QMK_KEYS_PER_SCAN 2
@@ -75,9 +75,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MOUSEKEY_WHEEL_MAX_SPEED 	10
 #define MOUSEKEY_WHEEL_TIME_TO_MAX  196
 
+#define FLOW_TAP_TERM 150
 #define QUICK_TAP_TERM 0
-#define RETRO_TAPPING
-#define RETRO_TAPPING_PER_KEY
 #define PERMISSIVE_HOLD
 #define PERMISSIVE_HOLD_PER_KEY
 #define MODS_TO_NEUTRALIZE { MOD_BIT(KC_LEFT_ALT), MOD_BIT(KC_LEFT_GUI), MOD_BIT(KC_RIGHT_GUI), MOD_BIT(KC_LEFT_CTRL)|MOD_BIT(KC_LEFT_SHIFT) }

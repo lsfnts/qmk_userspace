@@ -20,12 +20,17 @@
         "console": false,
         "extrakey": true,
         "mousekey": true,
-        "nkro": false
+        "nkro": true
     },
     "qmk": {
         "locking": {
             "enabled": true,
             "resync": true
+        }
+    },
+    "host": {
+        "default": {
+            "nkro": true
         }
     },
     "matrix_pins": {
