@@ -75,7 +75,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MOUSEKEY_WHEEL_MAX_SPEED 	10
 #define MOUSEKEY_WHEEL_TIME_TO_MAX  196
 
-#define FLOW_TAP_TERM 150
+#define FLOW_TAP_TERM 100
 #define QUICK_TAP_TERM 0
 #define PERMISSIVE_HOLD
 #define PERMISSIVE_HOLD_PER_KEY
