@@ -171,12 +171,24 @@ const keypos_t hand_swap_config[MATRIX_ROWS][MATRIX_COLS] = {
     {{5, 5}, {4, 5}, {3, 5}, {2, 5}, {1, 5}, {0, 5}}
 };
 
-/*bool get_retro_tapping(uint16_t keycode, keyrecord_t *record) {
-    switch(keycode) {
-        default:
-            return false;
+bool is_flow_tap_key(uint16_t keycode) {
+    if ((get_mods() & (MOD_MASK_CG | MOD_BIT_LALT)) != 0) {
+        return false; // Disable Flow Tap on hotkeys.
     }
-}*/
+    switch (get_tap_keycode(keycode)) {
+        case KC_SPC:
+        case KC_A ... KC_D:
+        case KC_F ... KC_M:
+        case KC_O ... KC_Z:
+        case KC_DOT:
+        case KC_COMM:
+        case KC_SCLN:
+        case KC_SLSH:
+            return true;
+    }
+    return false;
+}
+
 bool get_permissive_hold(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         case HOME_N:
