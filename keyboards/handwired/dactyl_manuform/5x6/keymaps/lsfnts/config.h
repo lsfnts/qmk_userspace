@@ -40,7 +40,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MATRIX_IO_DELAY 14
 
 #undef DEBOUNCE
-#define DEBOUNCE 4
+#define DEBOUNCE 10
 
 #undef MATRIX_COL_PINS
 #undef MATRIX_ROW_PINS
@@ -52,7 +52,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 //#define DEBUG_MATRIX_SCAN_RATE
 
-#define TAPPING_TERM 350
+#define TAPPING_TERM 320
 #define TAPPING_TERM_PER_KEY
 
 #define QMK_KEYS_PER_SCAN 2
@@ -60,6 +60,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define EXTRA_SHORT_COMBOS
 
 #define USB_POLLING_INTERVAL_MS 2
+#define NKRO_DEFAULT_ON true
 
 #define NO_MUSIC_MODE
 
@@ -75,7 +76,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MOUSEKEY_WHEEL_MAX_SPEED 	10
 #define MOUSEKEY_WHEEL_TIME_TO_MAX  196
 
-#define FLOW_TAP_TERM 100
+#define FLOW_TAP_TERM 80
 #define QUICK_TAP_TERM 0
 #define PERMISSIVE_HOLD
 #define PERMISSIVE_HOLD_PER_KEY
