@@ -99,11 +99,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
     [_MOUSE] = LAYOUT_5x6(
         KC_F12 , KC_F1 , KC_F2 , KC_F3 , KC_F4 , KC_F5 ,                        KC_F6  , KC_F7 , KC_F8 , KC_F9 ,KC_F10 ,KC_F11 ,
-        _______,_______,_______,_______,_______,_______,                        _______,KC_BTN3,KC_MS_U,KC_BTN4,KC_BTN5,KC_BTN6,
-        _______,_______,KC_ACL0,KC_ACL1,KC_ACL2,_______,                        _______,KC_MS_L,KC_MS_D,KC_MS_U,KC_MS_R,_______,
-        _______,_______,_______,_______,_______,_______,                        _______,KC_WH_L,KC_WH_D,KC_WH_U,KC_WH_R,_______,
+        _______,_______,_______,_______,_______,_______,                        _______,MS_BTN3,MS_UP,MS_BTN4,MS_BTN5,MS_BTN6,
+        _______,_______,MS_ACL0,MS_ACL1,MS_ACL2,_______,                        _______,MS_LEFT,MS_DOWN,MS_UP,MS_RIGT,_______,
+        _______,_______,_______,_______,_______,_______,                        _______,MS_WHLL,MS_WHLD,MS_WHLU,MS_WHLR,_______,
                         _______,_______,                                                        _______,_______,
-                                                  _______,_______,            KC_BTN1,KC_BTN2,
+                                                  _______,_______,            MS_BTN1,MS_BTN2,
                                                   _______,_______,            _______,_______,
                                                   _______,_______,            _______,_______
     ),
